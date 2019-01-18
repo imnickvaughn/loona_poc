@@ -7,6 +7,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { GraphQLModule } from './graphql.module';
+import { APP_BASE_HREF } from '@angular/common';
 
 @NgModule({
   declarations: [AppComponent],
@@ -18,7 +19,7 @@ import { GraphQLModule } from './graphql.module';
     AppRoutingModule,
     GraphQLModule,
   ],
-  providers: [],
+  providers: [{provide: APP_BASE_HREF, useValue: '/'}],
   bootstrap: [AppComponent],
 })
 export class AppModule { }
