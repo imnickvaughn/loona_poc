@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
       <span class="title">Loona example</span>
       <button mat-button routerLink="/books" routerLinkActive="active">/Books</button>
       <button mat-button routerLink="/notes" routerLinkActive="active">/Notes</button>
+      <button mat-button routerLink="/movies" routerLinkActive="active">/Movies</button>
     </mat-toolbar>
     <div class="container">
       <router-outlet></router-outlet>
