@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
       <button mat-button routerLink="/books" routerLinkActive="active">/Books</button>
       <button mat-button routerLink="/notes" routerLinkActive="active">/Notes</button>
       <button mat-button routerLink="/movies" routerLinkActive="active">/Movies</button>
+      <button mat-button routerLink="/shows" routerLinkActive="active">/Shows</button>
     </mat-toolbar>
     <div class="container">
       <router-outlet></router-outlet>
