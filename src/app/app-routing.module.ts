@@ -15,6 +15,10 @@ const routes: Routes = [
     loadChildren: './movies/movies.module#MoviesModule',
   },
   {
+    path: 'shows',
+    loadChildren: './shows/shows.module#ShowsModule',
+  },
+  {
     path: '',
     pathMatch: 'full',
     redirectTo: 'books',
