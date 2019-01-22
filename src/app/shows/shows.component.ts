@@ -1,14 +1,27 @@
+import { ExampleModel } from './../shared/example.model';
 import { Component, OnInit } from '@angular/core';
+
+
 
 @Component({
   selector: 'app-shows',
-  template: `shows component works!`
+  template: `
+  <submit-form label="Show" (value)="onShow($event)"></submit-form>
+
+  `
 })
 export class ShowsComponent implements OnInit {
 
-  constructor() { }
+  constructor(public example: ExampleModel) { }
 
-  ngOnInit() {
+  ngOnInit() { }
+
+  onShow(text: string) {
+    console.log(text)
+    this.example.store.push(text);
+    console.log(this.example.store)
+    // console.log(this.store.store)
+
   }
 
 }

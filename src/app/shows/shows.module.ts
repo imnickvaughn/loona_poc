@@ -1,3 +1,4 @@
+import { SharedModule } from './../shared/shared.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
@@ -8,7 +9,8 @@ import { ShowsComponent } from './shows.component';
   declarations: [ShowsComponent],
   imports: [
     CommonModule,
-    ShowsRoutingModule
+    ShowsRoutingModule,
+    SharedModule
   ]
 })
 export class ShowsModule { }
