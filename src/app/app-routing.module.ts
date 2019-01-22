@@ -19,6 +19,10 @@ const routes: Routes = [
     loadChildren: './shows/shows.module#ShowsModule',
   },
   {
+    path: 'documentaries',
+    loadChildren: './documentaries/documentaries.module#DocumentariesModule',
+  },
+  {
     path: '',
     pathMatch: 'full',
     redirectTo: 'books',
